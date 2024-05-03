@@ -2,18 +2,15 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-
 // Define a route
 app.get('/', (req, res) => {
   res.send('Congratulations HHLD Folks - we are in ECS Demo!');
 });
 
-
+//health api
 app.get('/health', (req, res) => {
   res.status(200).send('ECS Demo is healthy');
 });
-
-
 
 
 // Start the server
